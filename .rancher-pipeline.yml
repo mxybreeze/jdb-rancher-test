@@ -11,7 +11,7 @@ stages:
       buildContext: .
       tag: gsafety/demo:v3
       pushRemote: true
-      registry: 10.3.10.131:5000
+      registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
