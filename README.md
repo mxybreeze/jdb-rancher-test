@@ -1,1 +1,1 @@
-# jdb-rancher-test
+SpringBoot demo project for rancher pipeline learning.
