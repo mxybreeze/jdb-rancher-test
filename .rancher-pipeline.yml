@@ -7,7 +7,7 @@ stages:
 - name: publish
   steps:
   - publishImageConfig:
-      dockerfilePath: Dockerfile
+      dockerfilePath: ./Dockerfile
       buildContext: .
       tag: library/tomcat_base:v1.0
       registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
