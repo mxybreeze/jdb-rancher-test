@@ -7,10 +7,9 @@ stages:
 - name: publish
   steps:
   - publishImageConfig:
-      dockerfilePath: ./Dockerfile
+      dockerfilePath: Dockerfile
       buildContext: .
-      tag: gsafety/demo:v3
-      pushRemote: true
+      tag: library/tomcat_base:v1.0
       registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
     env:
       PLUGIN_DEBUG: "true"
@@ -23,3 +22,4 @@ timeout: 60
 branch:
   include:
   - master
+notification: {}
