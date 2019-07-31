@@ -10,7 +10,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: library/tomcat_base:v1.0
-      pushRemote: true
       registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
     env:
       PLUGIN_DEBUG: "true"
