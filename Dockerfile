@@ -2,7 +2,7 @@ FROM centos:7.6.1810
 MAINTAINER "chris@jiedaibao.com"
 RUN mkdir -p /data/tomcat
 RUN mkdir -p /data/release
-ADD target/MavenSpringMVCdemo.war
+ADD target/MavenSpringMVCdemo.war /data/release
 WORKDIR /data
 ADD jdk.tar.gz /data/
 ADD tomcat.tar.gz /data/
