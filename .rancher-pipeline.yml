@@ -11,7 +11,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: library/tomcat_demo:v1.0
+      tag: library/tomcat_demo:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: harbor.jiedaibao.com
     env:
