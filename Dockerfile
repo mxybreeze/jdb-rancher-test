@@ -3,6 +3,7 @@ MAINTAINER "chris@jiedaibao.com"
 RUN mkdir -p /data/tomcat
 RUN mkdir -p /data/release
 ADD target/MavenSpringMVCdemo.war /data/release
+RUN ln -s /data/$HOSTNAME /data/logs
 WORKDIR /data
 EXPOSE 8080
 ENTRYPOINT ["/data/tomcat/bin/catalina.sh","run"]
