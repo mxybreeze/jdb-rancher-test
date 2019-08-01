@@ -4,8 +4,8 @@ stages:
   - runScriptConfig:
       image: harbor.jiedaibao.com/library/maven:latest
       shellScript: |-
-        mvn clean compile
-        mvn clean package
+        mvn compile
+        mvn package
 - name: publish
   steps:
   - publishImageConfig:
