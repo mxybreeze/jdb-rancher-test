@@ -3,14 +3,17 @@ stages:
   steps:
   - runScriptConfig:
       image: harbor.jiedaibao.com/library/maven:latest
-      shellScript: mvn clean package
+      shellScript: |-
+        mvn clean compile
+        mvn clean package
 - name: publish
   steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: library/tomcat_base:v1.0
-      registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
+      tag: library/tomcat_base:v2.0
+      pushRemote: true
+      registry: harbor.jiedaibao.com
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
