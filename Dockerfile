@@ -1,4 +1,4 @@
-FROM centos:7.6.1810
+FROM harbor.jiedaibao.com/library/centos:7.6.1810
 MAINTAINER "chris@jiedaibao.com"
 RUN mkdir -p /data/tomcat
 RUN mkdir -p /data/release
