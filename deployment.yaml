@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: harbor.jiedaibao.com/library/mvn-demo:v1
+        image: harbor.jiedaibao.com/library/tomcat_demo:v1.0
         ports:
         - containerPort: 8080
 
