@@ -1,0 +1,25 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: harbor.jiedaibao.com/library/maven:latest
+      shellScript: mvn clean package
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: library/tomcat_base:v1.0
+      registry: harbor.jiedaibao.com/library/tomcat_base:v1.0
+    env:
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true"
+- name: deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+timeout: 60
+branch:
+  include:
+  - master
+notification: {}
