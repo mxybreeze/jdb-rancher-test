@@ -2,7 +2,7 @@ FROM harbor.jiedaibao.com/library/centos:7.6.1810
 MAINTAINER "chris@jiedaibao.com"
 RUN mkdir -p /data/tomcat
 RUN mkdir -p /data/release
-ADD /home/jenkins/workspace/pipeline_p-bm67h-30/target/MavenSpringMVCdemo.war /data/release
+ADD target/MavenSpringMVCdemo.war /data/release
 WORKDIR /data
 ADD jdk.tar.gz /data/
 ADD tomcat.tar.gz /data/
