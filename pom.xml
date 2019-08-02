@@ -87,9 +87,6 @@
             <id>jdb-snapshots</id>
             <name>JDB Snapshots</name>
             <url>http://mvn.jdb-dev.com/content/repositories/snapshots/</url>
-            <id>jdb-releases</id>
-            <name>JDB Releases</name>
-            <url>http://mvn.jdb-dev.com/content/repositories/releases/</url>
         </repository>
     </repositories>
 <!--
