@@ -93,7 +93,7 @@
         </repository>
     </repositories>
 <!--
-  <repositories><!-- ´úÂë¿â -->
+  <repositories>
         <repository>
             <id>maven-ali</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
