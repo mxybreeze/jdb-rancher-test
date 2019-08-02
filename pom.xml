@@ -87,25 +87,25 @@
             <id>jdb-snapshots</id>
             <name>JDB Snapshots</name>
             <url>http://mvn.jdb-dev.com/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
             <id>jdb-releases</id>
             <name>JDB Releases</name>
             <url>http://mvn.jdb-dev.com/content/repositories/releases/</url>
         </repository>
     </repositories>
-#  <repositories><!-- ´úÂë¿â -->
-#        <repository>
-#            <id>maven-ali</id>
-#            <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
-#            <releases>
-#                <enabled>true</enabled>
-#            </releases>
-#            <snapshots>
-#                <enabled>true</enabled>
-#                <updatePolicy>never</updatePolicy>
-#                <checksumPolicy>fail</checksumPolicy>
-#            </snapshots>
-#        </repository>
-#  </repositories>
+<!--
+  <repositories><!-- ´úÂë¿â -->
+        <repository>
+            <id>maven-ali</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+  </repositories>
+-->
 </project>
